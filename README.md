@@ -3,8 +3,7 @@
 ## Overview
 
 The 2° Investing Initiative (2DII) is an independent, non-profit think tank that coordinates some of the world’s largest research projects on sustainable finance.
-Our research projects included data collection through surveys, focus groups, campaigns, among others. This package contains the raw data captured in differents 
-project. 
+Our research retail projects included data collection through surveys, focus groups, campaigns, among others. This package contains the raw data captured in those projects. 
 
 ## Installation
 
@@ -29,3 +28,6 @@ Once you installed the package, you can upload the raw data calling it, as follo
 |Mystery_france_2021    |Mystery shopping campaign in 2021, developed in France. Version in French.                                                        |   
 |Survey_ESIP_2021       |The survey sought to identify the green consumer preferences in Germany, Greece, Estonia, Ireland, Romania and Denmark. |
 
+## Documentation
+
+The documentation of each dataset contains the metadata, with the description, usage, format, name variables and variables' description. 
