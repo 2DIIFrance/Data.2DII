@@ -27,6 +27,7 @@ Once you installed the package, you can upload the raw data calling it, as follo
 |Mystery_ESIP_2021      |Mystery shopping campaign in 2021, focusing on a group of six countries in Western, Nordic and Eastern Europe: Denmark, Estonia, Ireland, Germany, Greece and Romania.  |
 |Mystery_france_2021    |Mystery shopping campaign in 2021, developed in France. Version in French.                                                        |   
 |Survey_ESIP_2021       |The survey sought to identify the green consumer preferences in Germany, Greece, Estonia, Ireland, Romania and Denmark. |
+|Mystery_EEI_2023       |Mystery shopping campaign in 2023, contains 98 visits, 3completed territories with 30 visits (Italy, Spain and The Netherlands) + 8 visitis for Sweden|
 
 ## Documentation
 
