@@ -7,7 +7,7 @@ Our research retail projects included data collection through surveys, focus gro
 
 ## Installation
 
-To install the package, we need to install the package from Github: 
+To install the package, first it is neccesary to install the package from Github: 
 remotes::install_github("2DegreesInvesting/2DII.data")
 
 Then charge the library:
