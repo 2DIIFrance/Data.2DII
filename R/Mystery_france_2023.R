@@ -1,0 +1,90 @@
+#' Mystery shopping campaign 2023 - France
+#'
+#' Mystery shopping campaign in 2023, developed in France. Version in French.
+#'
+#' @format A tibble with 64 rows and 82 variables:
+#' \describe{
+#'   \item{respondent_id}{respondent_id}
+#'   \item{collector_id}{collector_id}
+#'   \item{date_created}{date_created}
+#'   \item{date_modified}{date_modified}
+#'   \item{ip_address}{ip_address}
+#'   \item{email_address}{email_address}
+#'   \item{first_name}{first_name}
+#'   \item{last_name}{last_name}
+#'   \item{custom_1}{custom_1}
+#'   \item{Quel est votre prénom ?}{Quel est votre prénom ?}
+#'   \item{q1}{1. Quel est votre profil de client Mystère ?}
+#'   \item{q2}{2. Date du rendez-vous (JJ/MM/2023)}
+#'   \item{q3}{3. Quel est le nom de la banque dans laquelle vous aviez rendez-vous ?}
+#'   \item{q4}{4. Quel est le titre de la personne avec qui vous aviez rendez-vous ?}
+#'   \item{q5}{5. Le conseiller était ?}
+#'   \item{q6}{6. Combien de temps a duré le rendez-vous ?}
+#'   \item{q7}{7. Le conseiller a-t-il abordé le sujet des préférences en matière de durabilité sans aucune incitation de votre part ?}
+#'   \item{q8}{8. Le conseiller s'est-il d'abord concentré sur l'évaluation de vos objectifs financiers/d'investissement, avant de commencer à parler de vos préférences en matière de développement durable ?}
+#'   \item{q9}{9. Le conseiller vous a-t-il expliqué ce qu'étaient les préférences en matière de durabilité ?}
+#'   \item{q10_a}{10. Que comprenait l'explication du conseiller sur les préférences en matière de durabilité?_a}
+#'   \item{q10_b}{10. Que comprenait l'explication du conseiller sur les préférences en matière de durabilité?_b}
+#'   \item{q10_c}{10. Que comprenait l'explication du conseiller sur les préférences en matière de durabilité?_c}
+#'   \item{q10_d}{10. Que comprenait l'explication du conseiller sur les préférences en matière de durabilité?_d}
+#'   \item{q10_e}{10. Que comprenait l'explication du conseiller sur les préférences en matière de durabilité?_e}
+#'   \item{q10_f}{10. Que comprenait l'explication du conseiller sur les préférences en matière de durabilité?_f}
+#'   \item{q10_g}{10. Que comprenait l'explication du conseiller sur les préférences en matière de durabilité?_g}
+#'   \item{q10_h}{10. Que comprenait l'explication du conseiller sur les préférences en matière de durabilité?_h}
+#'   \item{q10_i}{10. Que comprenait l'explication du conseiller sur les préférences en matière de durabilité?_i}
+#'   \item{q10_j}{10. Que comprenait l'explication du conseiller sur les préférences en matière de durabilité?_j}
+#'   \item{q11}{11. Si 'Autre', veuillez préciser}
+#'   \item{q12_a}{12. Dans l'explication des préférences en matière de durabilité, le conseiller a-t-il fait référence à différents buts/objectifs de durabilité que vous pourriez avoir pour vos investissements?_a}
+#'   \item{q12_b}{12. Dans l'explication des préférences en matière de durabilité, le conseiller a-t-il fait référence à différents buts/objectifs de durabilité que vous pourriez avoir pour vos investissements?_b}
+#'   \item{q12_c}{12. Dans l'explication des préférences en matière de durabilité, le conseiller a-t-il fait référence à différents buts/objectifs de durabilité que vous pourriez avoir pour vos investissements?_c}
+#'   \item{q12_d}{12. Dans l'explication des préférences en matière de durabilité, le conseiller a-t-il fait référence à différents buts/objectifs de durabilité que vous pourriez avoir pour vos investissements?_d}
+#'   \item{q12_e}{12. Dans l'explication des préférences en matière de durabilité, le conseiller a-t-il fait référence à différents buts/objectifs de durabilité que vous pourriez avoir pour vos investissements?_e}
+#'   \item{q13}{13. Si 'Autre', veuillez préciser}
+#'   \item{q14}{14. L'explication était-elle liée aux produits financiers que le conseiller recommandait ou à l'ensemble des produits financiers sur le marché ?}
+#'   \item{q15}{15. L'explication des préférences en matière de durabilité a-t-elle été fournie de manière neutre et impartiale ?}
+#'   \item{q16}{16. Veuillez expliquer votre réponse pour savoir si l'explication des préférences en matière de durabilité a été fournie de manière neutre et impartiale}
+#'   \item{q17}{17. Lorsque vous avez demandé si investir dans des produits verts était risqué, comment le conseiller a-t-il répondu ?}
+#'   \item{q18}{18. Avez-vous bien compris l'explication du conseiller au sujet des préférences en matière de durabilité ?}
+#'   \item{q19}{19. Le conseiller a-t-il vérifié que vous aviez compris l'explication des préférences en matière de durabilité ?}
+#'   \item{q20}{20. Comment le conseiller vous a-t-il semblé être formé et compétent sur le sujet de la finance durable en général ?}
+#'   \item{q21}{21. Pouvez-vous développer votre réponse ?}
+#'   \item{q22_a}{22. Si vous avez remarqué un manque problématique de connaissances ou d'expertise de la part du conseiller au cours de l'entretien, veuillez indiquer ces moments_a}
+#'   \item{q22_b}{22. Si vous avez remarqué un manque problématique de connaissances ou d'expertise de la part du conseiller au cours de l'entretien, veuillez indiquer ces moments_b}
+#'   \item{q22_c}{22. Si vous avez remarqué un manque problématique de connaissances ou d'expertise de la part du conseiller au cours de l'entretien, veuillez indiquer ces moments_c}
+#'   \item{q22_d}{22. Si vous avez remarqué un manque problématique de connaissances ou d'expertise de la part du conseiller au cours de l'entretien, veuillez indiquer ces moments_d}
+#'   \item{q22_e}{22. Si vous avez remarqué un manque problématique de connaissances ou d'expertise de la part du conseiller au cours de l'entretien, veuillez indiquer ces moments_e}
+#'   \item{q22_f}{22. Si vous avez remarqué un manque problématique de connaissances ou d'expertise de la part du conseiller au cours de l'entretien, veuillez indiquer ces moments_f}
+#'   \item{q23}{23. Le conseiller vous a-t-il demandé quelles étaient vos propres préférences en matière de développement durable ?}
+#'   \item{q24}{24. Le conseiller vous a-t-il interrogé sur vos propres préférences en matière de développement durable avant de vous présenter des produits financiers ?}
+#'   \item{q25}{25. Le conseiller vous a-t-il demandé quelle proportion minimale vous souhaitez investir en fonction de vos préférences en matière de développement durable ?}
+#'   \item{q26}{26. Comment la proportion minimale que vous souhaitez investir en fonction de vos préférences en matière de développement durable a-t-elle été évaluée ?}
+#'   \item{q27}{27. A la question de savoir s'il est possible de garantir le respect des droits de l'homme par les entreprises dans lesquelles vous pourriez investir, qu'a répondu le conseiller ?}
+#'   \item{q28}{28. Si 'Autre', veuillez préciser}
+#'   \item{qA1_a}{A1. PROFIL 1 SEULEMENT - Lorsque vous avez exprimé le souhait d'avoir une proportion minimale de 100 % investie dans des placements écologiquement durables axés sur l'atténuation et l'adaptation au changement climatique, comment le conseiller a-t-il répondu ?_a}
+#'   \item{qA1_b}{A1. PROFIL 1 SEULEMENT - Lorsque vous avez exprimé le souhait d'avoir une proportion minimale de 100 % investie dans des placements écologiquement durables axés sur l'atténuation et l'adaptation au changement climatique, comment le conseiller a-t-il répondu ?_b}
+#'   \item{qA1_c}{A1. PROFIL 1 SEULEMENT - Lorsque vous avez exprimé le souhait d'avoir une proportion minimale de 100 % investie dans des placements écologiquement durables axés sur l'atténuation et l'adaptation au changement climatique, comment le conseiller a-t-il répondu ?_c}
+#'   \item{qA1_d}{A1. PROFIL 1 SEULEMENT - Lorsque vous avez exprimé le souhait d'avoir une proportion minimale de 100 % investie dans des placements écologiquement durables axés sur l'atténuation et l'adaptation au changement climatique, comment le conseiller a-t-il répondu ?_d}
+#'   \item{qA1_e}{A1. PROFIL 1 SEULEMENT - Lorsque vous avez exprimé le souhait d'avoir une proportion minimale de 100 % investie dans des placements écologiquement durables axés sur l'atténuation et l'adaptation au changement climatique, comment le conseiller a-t-il répondu ?_e}
+#'   \item{qA2}{A2. PROFIL 1 SEULEMENT - Si 'Autre', veuillez préciser}
+#'   \item{qB1}{B1. PROFIL 2 SEULEMENT - Lorsque vous avez exprimé le désir d'investir d'une manière qui génère un impact positif dans le monde réel et que vous avez demandé ce qui pourrait prouver/démontrer l'impact de tout investissement, comment le conseiller a-t-il répondu ?}
+#'   \item{qB2}{B2. PROFIL 2 SEULEMENT -Si 'Autre', veuillez préciser}
+#'   \item{q29}{29. Quels outils le conseiller a-t-il utilisés pour enregistrer les informations sur vos préférences en matière de développement durable ?}
+#'   \item{q30}{30. Après avoir posé toutes ces questions, le conseiller a-t-il résumé votre profil au sujet de vos préférences en matière de développement durable ?}
+#'   \item{q31}{31. Ce résumé correspondait-il à vos attentes/besoins ?}
+#'   \item{q32}{32. Si 'Non', veuillez expliquer pourquoi ?}
+#'   \item{q33}{33. Le conseiller vous a-t-il présenté un produit financier sans vous demander si vous souhaitiez adapter vos préférences en matière de développement durable ?}
+#'   \item{q34}{34. Si le conseiller vous a présenté un produit financier (sans vous demander si vous souhaitez adapter vos préférences en matière de développement durable), veuillez enregistrer votre perception sur le fait de savoir s'il correspond à la fois à vos objectifs d'investissement et à vos préférences en matière de développement durable ?}
+#'   \item{qA3}{A3. PROFIL 1 SEULEMENT - Si le conseiller vous présente un produit financier (sans vous demander si vous souhaitez adapter vos préférences en matière de développement durable), comment le conseiller couvre-t-il votre désir d'avoir une proportion minimale de 100 % à investir dans des investissements durables sur le plan environnemental, axés sur l'atténuation du changement climatique ou l'adaptation climatique ?}
+#'   \item{qB3}{B3. PROFIL 2 SEULEMENT - Si le conseiller vous présente un produit financier (sans vous demander si vous souhaitez adapter vos préférences en matière de développement durable), comment le conseiller a-t-il couvert votre désir d'investir de manière à générer un impact positif dans le monde réel et être en mesure de démontrer l'impact du investissement?}
+#'   \item{q35}{35. Si le conseiller n'a pas été en mesure de vous présenter un produit financier correspondant à vos préférences en matière de développement durable, quelles en ont été les raisons ?}
+#'   \item{q36}{36. Si le conseiller n'a pas été en mesure de vous présenter un produit financier qui correspond à vos préférences en matière de développement durable, comment s'est déroulée la suite du rendez-vous ?}
+#'   \item{q37}{37. Si 'Autre', veuillez préciser}
+#'   \item{q38}{38. Si le conseiller vous a demandé si vous vouliez adapter vos préférences en matière de développement durable parce qu'il n'avait pas de produit financier adapté, le conseiller a-t-il été clair sur le fait que d'autres produits financiers qui correspondent à vos préférences en matière de développement durable pourraient être disponibles auprès d'autres conseillers ?}
+#'   \item{q39}{39. Si le conseiller vous a demandé si vous vouliez adapter vos préférences en matière de développement durable parce qu'il n'avait pas de produit financier adapté, vous êtes-vous senti influencé afin d'adapter vos préférences en matière de développement durable à un produit financier recommandé par le conseiller ? Le conseiller vous a-t-il mis sous pression pour choisir un produit ?}
+#'   \item{q40}{40. Quels outils le conseiller a-t-il utilisés pour enregistrer les informations indiquant si vous avez modifié vos préférences en matière de développement durable ?}
+#'   \item{q41}{41. A la fin du rendez-vous, le conseiller vous a-t-il fait un résumé de votre rendez-vous ?	}"
+#'   \item{q42}{42. Dans le cas où le conseiller ne vous a pas remis de récapitulatif à la fin du rendez-vous, après que vous l'ayez demandé, en avez-vous reçu un ?}
+#'   \item{q43}{43. Veuillez fournir des commentaires sur votre expérience en général et sur le niveau d'expertise du conseiller en ce qui concerne les préférences en matière de durabilité. Dans quelle mesure étiez-vous satisfait des produits proposés ?}
+#'   \item{q44}{44. Si on vous a recommandé un produit financier qui est présenté comme correspondant à vos préférences en matière de développement durable, veuillez enregistrer le numéro ISIN.}
+#' }
+"Mystery_france_2023"
