@@ -4,6 +4,13 @@
 #'
 #' @format A tibble with 98 rows and 57 variables:
 #' \describe{
+#' \item{Evaluation_ID}{Evaluation_ID}
+#'   \item{Client_Survey_Name}{Client_Survey_Name}
+#'   \item{Evaluation_Date}{Date}
+#'   \item{Evaluation Score}{Score made by Bare International}
+#'   \item{Location_ID}{Location_ID}
+#'   \item{Location_Name}{Bank code}
+#'   \item{Country}{Country}
 #'   \item{q1}{1. What is your Mystery Shopper Profile?}
 #'   \item{q2}{2. Date of appointment}
 #'   \item{q3}{3. What is the name of the bank where you had an appointment? Please select.}
