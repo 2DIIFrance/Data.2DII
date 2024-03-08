@@ -1,4 +1,4 @@
-# 2DII.data
+# Data.2DII
 
 ## Overview
 
@@ -8,7 +8,7 @@ Our research retail projects included data collection through surveys, focus gro
 ## Installation
 
 To install the package, first it is neccesary to install the package from Github: 
-remotes::install_github("2DegreesInvesting/2DII.data")
+remotes::install_github("2DegreesInvesting/Data.2DII")
 
 Then charge the library:
 library(Data.2DII)
