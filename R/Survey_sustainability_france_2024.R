@@ -1,0 +1,248 @@
+#' Sustainability survey France 2024
+#'
+#' In 2024, 2DII designed a survey to understand the demand for sustainable finance products. This survey was implemented in France.
+#'
+#' @format A tibble with 1269 rows and 183 variables, however only 1000 respondents are available for the data:
+#' \describe{
+#'
+#'
+#'   \item{uuid}{ Participant identifier}
+#'   \item{start_date}{ Survey start time}
+#'   \item{date}{ Completion time and date}
+#'   \item{qtime}{ Total Interview Time}
+#'   \item{status}{ Participant status}
+#'   \item{h_ctype}{ HIDDEN}
+#'   \item{E0}{ Hidden for the country.}
+#'   \item{E1}{ Gender}
+#'   \item{SD2r1}{ What is your age?}
+#'   \item{demog_age_recode}{ HIDDEN to recode the age into breaks}
+#'   \item{F5}{ How much do you save monthly? Please indicate the amount of your monthly financial saving including retirement savings (but excluding real estate loan payments). If you save occasionally, please estimate the monthly average of your savings for the past 12 months. When saving together with a partner, please split the amount in half.}
+#'   \item{F6}{ Please indicate the amount of the money and securities assets of your household.}
+#'   \item{A1}{ Which of the following statements applies to you with regard to financial decisions (e.g., investing money)?}
+#'   \item{A2r1}{Generate a precautionary buffer to be used in case of problem}
+#'   \item{A2r2}{Save for retirement}
+#'   \item{A2r3}{Generate a long-term increase in wealth that could eventually be bequeathed to my children}
+#'   \item{A2r4}{Generate additional income}
+#'   \item{A2r5}{Save money for personal projects}
+#'   \item{A2r6}{Save money for children or relatives}
+#'   \item{A2r7}{Any other objective}
+#'   \item{A2B}{ You mentioned other financial objectives, could you please detail what are these objectives?}
+#'   \item{A4}{ Suppose you had $100 in a savings account and the interest rate was 2% per year. After 5 years, how much do you think you would have in the account if you left the money to grow?}
+#'   \item{A5}{ Imagine that the interest rate on your savings account was 1% per year and inflation was 2% per year. After 1 year, how much would you be able to buy with the money in this account?}
+#'   \item{A6}{ Buying a single company's stock usually provides a safer return than a stock mutual fund.}
+#'   \item{A7}{ If interest rates fall, what should happen to bond prices?}
+#'   \item{A8}{ How willing or unwilling are you to take risks when making decisions in your life?}
+#'   \item{noanswerA8_c8}{ No Answer}
+#'   \item{A9}{ How well do the following statements describe your personality? I see myself as someone who …}
+#'   \item{A9r1}{…is reserved}
+#'   \item{A9r2}{…is generally trusting}
+#'   \item{A9r3}{…tends to be lazy}
+#'   \item{A9r4}{…is relaxed, handles stress well}
+#'   \item{A9r5}{…has few artistic interests}
+#'   \item{A9r6}{…is outgoing, sociable}
+#'   \item{A9r7}{…tends to find fault with others}
+#'   \item{A9r8}{…does a thorough job}
+#'   \item{A9r9}{…gets nervous easily}
+#'   \item{A9r10}{…has an active imagination}
+#'   \item{B1}{ Have you ever heard of sustainable finance products or sustainable investing?}
+#'   \item{B2}{ Do you currently own sustainable investments/sustainable finance products?}
+#'   \item{B3}{ Do you plan to invest (additional) money in sustainable investments/sustainable finance products within the next three years?}
+#'   \item{B4}{ You have previously answered that you already own sustainable investments. Could you say what proportion (in %) of your total financial savings is currently invested in sustainable investments}
+#'   \item{B4r1}{Savings account}
+#'   \item{B4r2}{Money market account}
+#'   \item{B4r3}{Shares}
+#'   \item{B4r4}{Equity funds (incl. ETFs and index funds)}
+#'   \item{B4r5}{Bonds}
+#'   \item{B4r6}{Bond funds}
+#'   \item{B4r7}{Private equity or debt funds}
+#'   \item{B4r8}{Crowdfunding}
+#'   \item{B4r9}{Cooperative shares}
+#'   \item{B4r10}{Other fixed-income securities (e.g. mortgage bonds, government bonds, savings contracts, time deposits, subordinated loans)}
+#'   \item{B4r11}{Other non-fixed-income securities (e.g. warrants, open-end real estate funds, closed-end funds, mixed funds)}
+#'   \item{B5}{ We have observed a gap between your will to contribute to the financing of the sustainable transformation and the current situation of your personal savings.}
+#'   \item{B5r1}{My financial advisor did not propose me the right products}
+#'   \item{B5r2}{I have found no time to understand and evaluate products related to sustainability, so I stick to a conventional asset allocation}
+#'   \item{B5r3}{I feel poorly informed about sustainable investments.}
+#'   \item{B5r4}{I do not trust that providers of sustainable investments follow the sustainability guidelines that they represent in their investment information.}
+#'   \item{B5r5}{I would like to invest in sustainable investments but I'm afraid that changing my asset allocation would increase the risk of my portfolio or decrease its return}
+#'   \item{B5r6}{It takes too much time to inform myself about sustainable investments and the underlying criteria.}
+#'   \item{B5r7}{I don't believe that sustainable investments generate a real world impact.}
+#'   \item{B5r8}{I'm motivated to be a sustainable investor but my sustainability preferences are not super clear to me.}
+#'   \item{B5r9}{The reasons are different among the financial products.}
+#'   \item{B5r10}{Prefer not to say}
+#'   \item{B6}{ You have indicated that you do not want to invest in sustainable investments or do not want to invest (additional) money in sustainable investments within the next three years.}
+#'   \item{B6r1}{My financial advisor did not propose me the right products}
+#'   \item{B6r2}{I have found no time to understand and evaluate products related to sustainability, so I stick to a conventional asset allocation}
+#'   \item{B6r3}{I feel poorly informed about sustainable investments.}
+#'   \item{B6r4}{I do not trust that providers of sustainable investments follow the sustainability guidelines that they represent in their investment information.}
+#'   \item{B6r5}{I would like to invest in sustainable investments but I'm afraid that changing my asset allocation would increase the risk of my portfolio or decrease its return}
+#'   \item{B6r6}{It takes too much time to inform myself about sustainable investments and the underlying criteria.}
+#'   \item{B6r7}{I don't believe that sustainable investments generate a real world impact.}
+#'   \item{B6r8}{I'm motivated to be a sustainable investor but my sustainability preferences are not super clear to me.}
+#'   \item{B6r9}{The reasons are different among the financial products.}
+#'   \item{B6r10}{Prefer not to say}
+#'   \item{B7}{ Please assess your knowledge about sustainable investments.}
+#'   \item{B8}{ In the context of sustainable financial investments, the acronym "ESG" is often used. What do you think the abbreviation "ESG" stands for?}
+#'   \item{B9}{ Does a product advertised in the European Union as a "sustainable financial product" have to meet uniform criteria, set by the state regulatory authorities?}
+#'   \item{B10}{ Are you aware of a label (or certificate, or proof) that certifies a sustainable financial product (from governmental or non-governmental organizations)?}
+#'   \item{B11}{ Let's say a company has a low environmental footprint but has poor social and employee practices. Would it be possible to call the shares of this company a "sustainable" financial product in the financial markets?}
+#'   \item{B11B}{ In how many of the 3 ESG components (Environment, Social, Corporate Governance) does a company have to be sustainable in order to be considered a sustainable company on the financial markets?}
+#'   \item{B12}{ An investment in a sustainable fund that includes companies with a low CO2 footprint directly reduces global CO2 emissions.}
+#'   \item{B13}{ Do financial institutions that offer sustainable products always proactively influence the sustainability behavior of the invested companies (e.g., by participating in the annual shareholders' meeting)?}
+#'   \item{B14}{ Is there a difference for you between "sustainable investing" and "impact investing?"}
+#'   \item{B15}{ Which of the following labels or certificates characterizes a financial product as sustainable in terms of environmental, social and governance criteria (ESG criteria)?}
+#'   \item{B16}{ How does an investment in a sustainable equity fund that focuses specifically on companies with a low carbon footprint contribute to the reduction of global CO2 emissions?}
+#'   \item{B17}{ What is "greenwashing" in the context of sustainable investments?}
+#'   \item{B18}{ What is an "exclusion strategy" when investing sustainably?}
+#'   \item{B19}{ Which statement best describes a "best-in-class" investment strategy?}
+#'   \item{B20}{ Please indicate your assessment of the average risk level of sustainable investments compared to conventional investments.}
+#'   \item{B21}{ Please indicate your assessment of the average level of interest rates or returns of sustainable investments compared to conventional investments.}
+#'   \item{B22}{ Please indicate your assessment of the average level of fees of sustainable investments compared to conventional investments.}
+#'   \item{C1}{ Please rate the following statement.}
+#'   \item{C1r1}{I believe that financial investments are an appropriate way to express one's values}
+#'   \item{C1r2}{I believe that financial investments in general are effective to change the world}
+#'   \item{C1r3}{I believe that my own financial investments, whatever their actual amount, can make a difference.}
+#'   \item{pos_1_LFr1}{Generate a precautionary buffer to be used in case of problem}
+#'   \item{pos_1_LFr2}{Save for retirement}
+#'   \item{pos_1_LFr3}{Generate a long-term increase in wealth that could eventually be bequeathed to my children}
+#'   \item{pos_1_LFr4}{Generate additional income}
+#'   \item{pos_1_LFr5}{Save money for personal projects}
+#'   \item{pos_1_LFr6}{Save money for children or relatives}
+#'   \item{pos_1_LFr7}{Any other objective}
+#'   \item{pos_1_LF_selectedr1}{Generate a precautionary buffer to be used in case of problem}
+#'   \item{pos_1_LF_selectedr2}{Save for retirement}
+#'   \item{pos_1_LF_selectedr3}{Generate a long-term increase in wealth that could eventually be bequeathed to my children}
+#'   \item{pos_1_LF_selectedr4}{Generate additional income}
+#'   \item{pos_1_LF_selectedr5}{Save money for personal projects}
+#'   \item{pos_1_LF_selectedr6}{Save money for children or relatives}
+#'   \item{pos_1_LF_selectedr7}{Any other objective}
+#'   \item{pos_2_LFr1}{Generate a precautionary buffer to be used in case of problem}
+#'   \item{pos_2_LFr2}{Save for retirement}
+#'   \item{pos_2_LFr3}{Generate a long-term increase in wealth that could eventually be bequeathed to my children}
+#'   \item{pos_2_LFr4}{Generate additional income}
+#'   \item{pos_2_LFr5}{Save money for personal projects}
+#'   \item{pos_2_LFr6}{Save money for children or relatives}
+#'   \item{pos_2_LFr7}{Any other objective}
+#'   \item{pos_2_LF_selectedr1}{Generate a precautionary buffer to be used in case of problem}
+#'   \item{pos_2_LF_selectedr2}{Save for retirement}
+#'   \item{pos_2_LF_selectedr3}{Generate a long-term increase in wealth that could eventually be bequeathed to my children}
+#'   \item{pos_2_LF_selectedr4}{Generate additional income}
+#'   \item{pos_2_LF_selectedr5}{Save money for personal projects}
+#'   \item{pos_2_LF_selectedr6}{Save money for children or relatives}
+#'   \item{pos_2_LF_selectedr7}{Any other objective}
+#'   \item{pos_3_LFr1}{Generate a precautionary buffer to be used in case of problem}
+#'   \item{pos_3_LFr2}{Save for retirement}
+#'   \item{pos_3_LFr3}{Generate a long-term increase in wealth that could eventually be bequeathed to my children}
+#'   \item{pos_3_LFr4}{Generate additional income}
+#'   \item{pos_3_LFr5}{Save money for personal projects}
+#'   \item{pos_3_LFr6}{Save money for children or relatives}
+#'   \item{pos_3_LFr7}{Any other objective}
+#'   \item{pos_3_LF_selected}{ HIDDEN}
+#'   \item{hid_c1}{ HIDDEN}
+#'   \item{hid_c1r1}{Generate a precautionary buffer to be used in case of problem}
+#'   \item{hid_c1r2}{Save for retirement}
+#'   \item{hid_c1r3}{Generate a long-term increase in wealth that could eventually be bequeathed to my children}
+#'   \item{hid_c1r4}{Generate additional income}
+#'   \item{hid_c1r5}{Save money for personal projects}
+#'   \item{hid_c1r6}{Save money for children or relatives}
+#'   \item{hid_c1r7}{Any other objective}
+#'   \item{D1_1}{ You documented in a previous question that your savings serve different financial goals. For the following goal "Generate a precautionary buffer to be used in case of problem", please express how important it is for you…?}
+#'   \item{D1_1r1}{…to align your savings with your personal values}
+#'   \item{D1_1r2}{…to use your savings to have a clear positive impact on the society or the environment}
+#'   \item{D1_1r3}{…that your savings achieve the maximum possible return for the level of risk you accept to take}
+#'   \item{D2_1}{ For the following goal "Generate a precautionary buffer to be used in case of problem", you have chosen more than one sustainability-related objectives. Please rank their priority in the order you would like to have them implemented (1 = most important).}
+#'   \item{D2_1r1}{…to align your savings with your personal values}
+#'   \item{D2_1r2}{…to use your savings to have a clear positive impact on the society or the environment}
+#'   \item{D2_1r3}{…that your savings achieve the maximum possible return for the level of risk you accept to take}
+#'   \item{D1_2}{ You documented in a previous question that your savings serve different financial goals. For the following goal "Save for retirement", please express how important it is for you…?}
+#'   \item{D1_2r1}{…to align your savings with your personal values}
+#'   \item{D1_2r2}{…to use your savings to have a clear positive impact on the society or the environment}
+#'   \item{D1_2r3}{…that your savings achieve the maximum possible return for the level of risk you accept to take}
+#'   \item{D2_2}{ For the following goal "Save for retirement", you have chosen more than one sustainability-related objectives. Please rank their priority in the order you would like to have them implemented (1 = most important).}
+#'   \item{D2_2r1}{…to align your savings with your personal values}
+#'   \item{D2_2r2}{…to use your savings to have a clear positive impact on the society or the environment}
+#'   \item{D2_2r3}{…that your savings achieve the maximum possible return for the level of risk you accept to take}
+#'   \item{D1_3}{ You documented in a previous question that your savings serve different financial goals. For the following goal "Generate a long-term increase in wealth that could eventually be bequeathed to my children", please express how important it is for you…?}
+#'   \item{D1_3r1}{…to align your savings with your personal values}
+#'   \item{D1_3r2}{…to use your savings to have a clear positive impact on the society or the environment}
+#'   \item{D1_3r3}{…that your savings achieve the maximum possible return for the level of risk you accept to take}
+#'   \item{D2_3}{ For the following goal "Generate a long-term increase in wealth that could eventually be bequeathed to my children", you have chosen more than one sustainability-related objectives. Please rank their priority in the order you would like to have them implemented (1 = most important).}
+#'   \item{D2_3r1}{…to align your savings with your personal values}
+#'   \item{D2_3r2}{…to use your savings to have a clear positive impact on the society or the environment}
+#'   \item{D2_3r3}{…that your savings achieve the maximum possible return for the level of risk you accept to take}
+#'   \item{D1_4}{ You documented in a previous question that your savings serve different financial goals. For the following goal "Generate additional income", please express how important it is for you…?}
+#'   \item{D1_4r1}{…to align your savings with your personal values}
+#'   \item{D1_4r2}{…to use your savings to have a clear positive impact on the society or the environment}
+#'   \item{D1_4r3}{…that your savings achieve the maximum possible return for the level of risk you accept to take}
+#'   \item{D2_4}{ For the following goal "Generate additional income", you have chosen more than one sustainability-related objectives. Please rank their priority in the order you would like to have them implemented (1 = most important).}
+#'   \item{D2_4r1}{…to align your savings with your personal values}
+#'   \item{D2_4r2}{…to use your savings to have a clear positive impact on the society or the environment}
+#'   \item{D2_4r3}{…that your savings achieve the maximum possible return for the level of risk you accept to take}
+#'   \item{D1_5}{ You documented in a previous question that your savings serve different financial goals. For the following goal "Save money for personal projects", please express how important it is for you…?}
+#'   \item{D1_5r1}{…to align your savings with your personal values}
+#'   \item{D1_5r2}{…to use your savings to have a clear positive impact on the society or the environment}
+#'   \item{D1_5r3}{…that your savings achieve the maximum possible return for the level of risk you accept to take}
+#'   \item{D2_5}{ For the following goal "Save money for personal projects", you have chosen more than one sustainability-related objectives. Please rank their priority in the order you would like to have them implemented (1 = most important).}
+#'   \item{D2_5r1}{…to align your savings with your personal values}
+#'   \item{D2_5r2}{…to use your savings to have a clear positive impact on the society or the environment}
+#'   \item{D2_5r3}{…that your savings achieve the maximum possible return for the level of risk you accept to take}
+#'   \item{D1_6}{ You documented in a previous question that your savings serve different financial goals. For the following goal "Save money for children or relatives", please express how important it is for you…?}
+#'   \item{D1_6r1}{…to align your savings with your personal values}
+#'   \item{D1_6r2}{…to use your savings to have a clear positive impact on the society or the environment}
+#'   \item{D1_6r3}{…that your savings achieve the maximum possible return for the level of risk you accept to take}
+#'   \item{D2_6}{ For the following goal "Save money for children or relatives", you have chosen more than one sustainability-related objectives. Please rank their priority in the order you would like to have them implemented (1 = most important).}
+#'   \item{D2_6r1}{…to align your savings with your personal values}
+#'   \item{D2_6r2}{…to use your savings to have a clear positive impact on the society or the environment}
+#'   \item{D2_6r3}{…that your savings achieve the maximum possible return for the level of risk you accept to take}
+#'   \item{D1_7}{ You documented in a previous question that your savings serve different financial goals. For the following goal "", please express how important it is for you…?}
+#'   \item{D1_7r1}{…to align your savings with your personal values}
+#'   \item{D1_7r2}{…to use your savings to have a clear positive impact on the society or the environment}
+#'   \item{D1_7r3}{…that your savings achieve the maximum possible return for the level of risk you accept to take}
+#'   \item{D2_7}{ For the following goal "", you have chosen more than one sustainability-related objectives. Please rank their priority in the order you would like to have them implemented (1 = most important).}
+#'   \item{D2_7r1}{…to align your savings with your personal values}
+#'   \item{D2_7r2}{…to use your savings to have a clear positive impact on the society or the environment}
+#'   \item{D2_7r3}{…that your savings achieve the maximum possible return for the level of risk you accept to take}
+#'   \item{E1}{ Imagine your financial advisor would recommend you to invest in the following investment fund product with the description below (please read)}
+#'   \item{E1r1}{I would expect that an investment in this fund allows me to have a clear positive impact on climate change.}
+#'   \item{E1r2}{I would expect that an investment in this fund allows me to align my savings with my personal values.}
+#'   \item{E1r3}{I would expect that an investment in this fund allows me to achieve the maximum possible return with my savings.}
+#'   \item{F3}{ Please indicate your highest educational level.}
+#'   \item{F3r6oe}{ Please indicate your highest educational level. - Other professional qualification}
+#'   \item{F4}{ Please indicate the monthly net income of your household (income after taxes and social security contributions).}
+#'   \item{C1_Lr11r1}{…to align your savings with your personal values}
+#'   \item{C1_Lr11r2}{…to use your savings to have a clear positive impact on the society or the environment}
+#'   \item{C1_Lr11r3}{…that your savings achieve the maximum possible return for the level of risk you accept to take}
+#'   \item{C2_Lr11}{ For the following financial product "Other non-fixed-income securities (e.g. warrants, open-end real estate funds, closed-end funds, mixed funds)", you have chosen more than one sustainability-related objectives.}
+#'   \item{C2_Lr11r1}{…to align your savings with your personal values}
+#'   \item{C2_Lr11r2}{…to use your savings to have a clear positive impact on the society or the environment}
+#'   \item{C2_Lr11r3}{…that your savings achieve the maximum possible return for the level of risk you accept to take}
+#'   \item{D1}{ In the following you will get some explanations. Please read the explanations carefully. The EU has developed a European classification system for economic activities (EU Taxonomy) that enables the measurement to what extent an economic activity of a company makes a substantial contribution to the six environmental goals. The six environmental objectives are}
+#'   \item{D2}{ In the following you will get some explanations. Please read the explanations carefully. In the Sustainable Finance Disclosure Regulation, the EU defines what a sustainable investment is - namely an investment in an economic activity that contributes to the achievement of an environmental or social objective. In so doing, no other of these objectives must be harmed, and the companies in which investments are being made must apply practices of good corporate governance.}
+#'   \item{D3}{ Under the concept of principal adverse impacts (PAIs) on sustainability factors, the EU considers adverse impacts on the environment and society. A financial product that considers PAIs avoids investments that have a negative effect on the environment and/or society (e.g., greenhouse gas emissions or waste, negative impacts on water biodiversity, or social and labor concerns).}
+#'   \item{D4}{ Based on the topics we explained before, which of the following options would meet your personal sustainability preference for your investment?}
+#'   \item{D4r1}{Environmentally sustainable investments as defined in the EU Taxonomy Regulation}
+#'   \item{D4r2}{Sustainable Investments within the meaning of the EU Sustainable Finance Disclosure Regulation}
+#'   \item{D4r3}{Considering principal adverse impacts (PAIs) on sustainability factors as defined in the EU Sustainable Finance Disclosure Regulation}
+#'   \item{D4r4}{Others:}
+#'   \item{D4r5}{I don't have a sustainability preference}
+#'   \item{D4r6}{I don't know}
+#'   \item{D4r4oe}{ Based on the topics we explained before, which of the following options would meet your personal sustainability preference for your investment? - Others}
+#'   \item{HID_VideoD5}{ - HIDDEN for Video Piping market vise}
+#'   \item{D5play_count}{Play Count}
+#'   \item{D5time_elapsed}{Elapsed Time}
+#'   \item{D6_1r1}{ Based on your understanding of the previous explanations, please rate the following statements}
+#'   \item{D6_2r1}{ Based on your understanding of the previous explanations, please rate the following statements}
+#'   \item{D7_1r1}{ Based on your understanding of the previous explanations, please rate the following statements}
+#'   \item{D7_2r1}{ Based on your understanding of the previous explanations, please rate the following statements}
+#'   \item{D7_3r1}{ Based on your understanding of the previous explanations, please rate the following statements}
+#'   \item{D8_1r1}{ Based on your understanding of the previous explanations, please rate the following statements}
+#'   \item{D8_2r1}{ Based on your understanding of the previous explanations, please rate the following statements}
+#'   \item{D8_3r1}{ Based on your understanding of the previous explanations, please rate the following statements}
+#'   \item{E3}{ Please indicate your highest educational level.}
+#'   \item{E3r6oe}{ Please indicate your highest educational level. - Other professional qualification}
+#'   \item{E4}{ Please indicate the monthly net income of your household (income after taxes and social security contributions).}
+#'   \item{E5}{ How much do you save monthly? Please indicate the amount of your monthly financial saving including retirement savings (but excluding real estate loan payments). If you save occasionally, please estimate the monthly average of your savings for the past 12 months. When saving together with a partner, please split the amount in half.}
+#'   \item{E6}{ Please indicate the amount of the money and securities assets of your household.}
+#'   \item{qtime}{ Total Interview Time}
+#' }
+"Survey_sustainability_france_2024"
