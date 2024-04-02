@@ -252,6 +252,6 @@ A tibble with 2106 rows and 212 variables:
 Survey_sustainability_2023
 }
 \description{
-In 2023, 2DII designed a survey to understand the demand for sustainable finance products. This survey was implemented in Germany, Italy and The Netherlands.
+The survey assets to understand the retail investors demand for sustainable finance products. It has 5 parts : A. Interest, B. Sustainable investing – General, C. Sustainability goals, D. Sustainability Preferences, E: Sociodemographic profile.
 }
 \keyword{datasets}

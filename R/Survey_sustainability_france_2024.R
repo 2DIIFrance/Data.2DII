@@ -1,6 +1,6 @@
 #' Sustainability survey France 2024
 #'
-#' In 2024, 2DII designed a survey to understand the demand for sustainable finance products. This survey was implemented in France.
+#' The survey assets to understand the retail investors demand for sustainable finance products. It has 5 parts : A. Interest, B. Sustainable investing – General, C. Sustainability goals, D. Sustainability Preferences, E: Sociodemographic profile.
 #'
 #' @format A tibble with 1269 rows and 183 variables, however only 1000 respondents are available for the data:
 #' \describe{

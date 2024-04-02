@@ -474,6 +474,6 @@ A tibble with 398 rows and 461 variables:
 EEI_wealthgermany_2022
 }
 \description{
-The survey aimed to ask the sustainable preferences to the wealth population (more than 250k euros in savings) in Germany.
+The survey assess the private investor demand and market potential for green/sustainable financial solutions with a focus on wealthier people in Germany (with more than 250k euros in savings). It is structured in 9 parts: A Interest in sustainable finance products, B Believes abouts sustainable finance products, C Sustainability objectives in relation to financial objectives, D Interst and preferences about voting, E+F Investments in and preferences for green financial products, G Interest in innovative green financial products (e.g. PE or infrastructure funds) , H Interest in green borrowing (e.g. green loans or energy performance contracts), I Sociodemographic profile.
 }
 \keyword{datasets}

@@ -95,6 +95,6 @@ A tibble with 64 rows and 82 variables:
 Mystery_france_2023
 }
 \description{
-Mystery shopping campaign in 2023, developed in France. Version in French.
+The focus of the this mystery shopping campaign was to assess the compliance with the new MiFID II regulation and broader sustainability motivations in France. (Results in French)
 }
 \keyword{datasets}

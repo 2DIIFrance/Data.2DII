@@ -103,6 +103,6 @@ A tibble with 253 rows and 90 variables:
 Mystery_2022
 }
 \description{
-The focus of the 2022 mystery shopping campaign is squarely within the areas where mystery shopping in the finance sector has been deemed to be particularly well suited. The results discussed in this paper are based on 253 mystery shopping visits carried out from November 2022 to January 2023 in the target countries: Denmark, Estonia, Germany, Greece, Ireland and Romania.
+The focus of the this mystery shopping campaign was to assess the compliance with the new MiFID II regulation and broader sustainability motivations. We allocated 4 hypothetical investor profiles to the mystery shoppers including e.g. an impact-oriented green investor profile or a pure value-oriented investor profile. We assessed the following topics (please note that for duty of confidentiality we removed personal information of mystery shoppers and the bank name and recommended products): - Explanation of sustainability preferences - Advisor knowledge and expertise - Identification of sustainability preferences - Financial product presentation/recommendation - Final conclusion of the meeting.
 }
 \keyword{datasets}

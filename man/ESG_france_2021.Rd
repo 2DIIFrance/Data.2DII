@@ -355,6 +355,6 @@ A tibble with 1534 rows and 342 variables:
 ESG_france_2021
 }
 \description{
-The survey aimed to measure the sustainable preferences in France.
+The survey aimed to retail investor sustainability preferences and their understanding of marketing claims. The survey is structured in 9 parts : A Sociodemographic information, B Financial information, C Sustainability profile, D Impact goals, E Evidence preferences, F Exclusion topics and scope, G Willigness for tradeoffs, H Misleading claims, I Believes about EEI/SEI products.
 }
 \keyword{datasets}

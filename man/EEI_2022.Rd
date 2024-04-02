@@ -436,6 +436,6 @@ A tibble with 6105 rows and 423 variables:
 EEI_2022
 }
 \description{
-The survey aimed to address the retail demand and market potential for green/sustainable financial solutions in six EU countries:  Belgium, Italy, the Netherlands, Poland, Spain, and Sweden.
+This survey aimed to assess the retail investor demand and market potential for green/sustainable financial solutions in six EU countries. It is structured in 9 parts:A Interest in sustainable finance products, B Believes abouts sustainable finance products, C Sustainability objectives in relation to financial objectives, D Interst and preferences about voting , E+F Investments in and preferences for green financial products, G Interest in innovative green financial products (e.g. PE or infrastructure funds) , H Interest in green borrowing (e.g. green loans or energy performance contracts), I Sociodemographic profile.
 }
 \keyword{datasets}

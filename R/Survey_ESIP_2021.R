@@ -1,6 +1,6 @@
 #' Survey ESIP 2021
 #'
-#' The survey sought to identify the green consumer preferences in Germany, Greece, Estonia, Ireland, Romania and Denmark.
+#' The survey assets to retail investors green consumer preferences. It containes: A. sociodemographic information, B. Believes, C. Sustainability objectives, D. Personal causes, E. Trade-offs, F. Green energy transition, G. Sustainability techniques, H. Applied sustainability techniques.
 #'
 #' @format A tibble with 4003 rows and 263 variables:
 #' \describe{

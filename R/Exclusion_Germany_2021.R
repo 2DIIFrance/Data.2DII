@@ -1,6 +1,6 @@
 #' Exclusion Survey Germany 2021
 #'
-#' The survey aimed to identify if investors considered exclude any controversial activities engage by companies when they are deciding invest their money.
+#' The survey aimed to assess retail investor preferences about exclusion topics, i.e. most relevant exclusions, scope of exclusions (value chain and revenue thresholds).
 #' Language : German
 #'
 #' @format A tibble with 4003 rows and 263 variables:

@@ -213,6 +213,6 @@ A tibble with 199 rows and 200 variables:
 Mystery_ESIP_2021
 }
 \description{
-Mystery shopping campaign in 2021, focusing on a group of six countries in Western, Nordic and Eastern Europe: Denmark, Estonia, Ireland, Germany, Greece and Romania.
+The focus of the this mystery shopping campaign was to assess the compliance with the new MiFID II regulation and broader sustainability motivations. We allocated 6 hypothetical investor profiles to the mystery shoppers including e.g. Risk - averse, balanced and risk taker, and 2 groups per profile: want to invest green and agnostic. We assessed the following topics (please note that for duty of confidentiality we removed personal information of mystery shoppers and the bank name and recommended products): - Explanation of sustainability preferences - Advisor knowledge and expertise - Identification of sustainability preferences - Financial product presentation/recommendation - Final conclusion of the meeting.
 }
 \keyword{datasets}

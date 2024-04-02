@@ -1,6 +1,6 @@
 #' Mystery Shopping campaign 2023
 #'
-#' The mystery shopping visits covered 4 countries amongst the Level EEI countries: Belgium, Italy, Netherlands, Poland, Spain and Sweden. At the end of the campaign, there were reached 98 visits, including 3 completed territories with 30 visits (Italy, Spain and The Netherlands) + 8 visits for Sweden.
+#' The focus of the this mystery shopping campaign was to assess the compliance with the new MiFID II regulation and broader sustainability motivations. We allocated 2 hypothetical investor profiles to the mystery shoppers including. We assessed the following topics (please note that for duty of confidentiality we removed personal information of mystery shoppers and the bank name and recommended products): - Explanation of sustainability preferences - Advisor knowledge and expertise - Identification of sustainability preferences - Financial product presentation/recommendation - Final conclusion of the meeting.
 #'
 #' @format A tibble with 98 rows and 57 variables:
 #' \describe{

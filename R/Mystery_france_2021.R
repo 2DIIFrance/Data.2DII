@@ -1,6 +1,6 @@
 #' Mystery shopping campaign 2021 - France
 #'
-#' Mystery shopping campaign in 2021, developed in France. Version in French.
+#'The aim of this mystery shopping campaign was to find out how sustainability preferences are questioned by bank advisors and how they are handled once identified before the new MiFID II directive comes into force(please note that for duty of confidentiality we removed personal information of mystery shoppers and the bank name and recommended products)):- Sustainability assestment - Advisor knowledge and expertise - Identification of sustainability preferences - Conclusions. (Results in French)
 #'
 #' @format A tibble with 101 rows and 160 variables:
 #' \describe{
