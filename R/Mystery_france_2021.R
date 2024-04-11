@@ -1,8 +1,12 @@
 #' Mystery shopping campaign France 2021
 #'
-#' Mystery shopping campaign in 2021, developed in France. Version in French.
+#' {Description}{The aim of this mystery shopping campaign was to find out how sustainability preferences are questioned by bank advisors and how they are handled once identified before the new MiFID II directive comes into force(please note that for duty of confidentiality we removed personal information of mystery shoppers and the bank name and recommended products)):- Sustainability assestment - Advisor knowledge and expertise - Identification of sustainability preferences - Conclusions. (Results in French)}
 #'
-#' @format A tibble with 101 rows and 158 variables:
+#'
+#' {Usage}{Mystery_france_2021}
+#'
+#' @format A tibble with 101 rows and 138 variables:
+#'
 #' \describe{
 #'
 #'
@@ -19,7 +23,6 @@
 #'   \item{profil}{Quel est votre profil (111, 112, ...)?}
 #'   \item{date}{Date du rendez-vous (jj/mm/aaaa): }
 #'   \item{reseau_bancaire}{Dans quel réseau bancaire avez-vous eu rendez-vous? }
-#'   \item{reseau_bancaire_autre}{Autre (veuillez préciser) :}
 #'   \item{nom_agence}{Indiquez le nom de l'agence : }
 #'   \item{titre}{Quel est le titre de la personne qui vous a reçu?}
 #'   \item{time}{Combien de temps a duré le rendez-vous? (hh:mm)}
@@ -40,7 +43,6 @@
 #'   \item{q3_11}{Vos connaissances extra-financières}
 #'   \item{q4}{Au terme de ces questions, vous a-t-il résumé votre profil ?}
 #'   \item{q5}{Ce résumé vous-est-il apparu comme juste?}
-#'   \item{q6}{Y'a t-il des informations complémentaires que vous souhaiteriez nous communiquer concernant l'évaluation du profil?}
 #'   \item{q7}{Le conseiller vous a-t-il semblé intéressé par votre appétence sur les sujets environnementaux ?}
 #'   \item{q8}{Si le conseiller a questionné votre aversion au risque, de quelle manière vous l’a-t-il demandé ?}
 #'   \item{q8_1}{Il vous a demandé directement comment vous caractérisez votre risque et s’est fié à votre réponse sans question de contrôle}
@@ -50,11 +52,7 @@
 #'   \item{q8_5}{Il vous a proposé une mise en situation avec plusieurs exemples concrets}
 #'   \item{q9}{Votre conseiller a t’il seulement abordé l'aspect financier des produits?}
 #'   \item{q10}{Votre conseiller vous a-t-il spontanément parlé des caractéristiques extra-financières des produits ? (Pour les profils qui souhaitent investir dans les placements durables (1, 2, 5, 6, 9, 10) si le conseiller n’aborde pas cet aspect-là, posez-lui plusieurs fois la question sur la disponibilité de produits durables, qui sont ceux qui vous attirent.)}
-#'   \item{q11}{Quels étaient ses arguments concernant les caractéristiques extra-financières des produits?}
-#'   \item{q12}{Quels sont les avantages qu'il vous a listé?}
-#'   \item{q13}{Quels étaient les inconvénients ? }
 #'   \item{q14}{Quelle a été la réaction du conseiller face à vos questions ?}
-#'   \item{q15}{Y'a t-il des informations supplémentaires que vous souhaiteriez nous communiquer au sujet des préférences extra-financières? }
 #'   \item{q16}{Le conseiller vous a-t-il cité spontanément les termes suivants ?}
 #'   \item{q16_1}{Green bonds (Obligations vertes)}
 #'   \item{q16_2}{Best-in-class}
@@ -110,9 +108,7 @@
 #'   \item{q22_2}{Il vous a interrogé sur vos objectifs extra-financiers et a creusé le sujet avec vous}
 #'   \item{q22_3}{Il vous a expliqué tous les termes pour lesquels vous aviez besoin d'explications}
 #'   \item{q22_4}{Autre (veuillez préciser)}
-#'   \item{q23}{Y'a t-il des informations supplémentaires que vous souhaiteriez nous communiquer à propos des connaissances du conseiller?}
 #'   \item{q24}{Vous avez indiqué au conseiller votre intérêt pour les placements responsables. Quelle est sa réaction quand vous lui demandez quels produits pourraient correspondre à vos objectifs de placement ?}
-#'   \item{q25}{Quel(s) produits financiers vous a-t-il proposé :}
 #'   \item{q26}{Finalement, suite à l’expression de vos préférences, le conseiller vous a-t-il proposé des produits durables ? }
 #'   \item{q26_1}{Non, il vous a présenté d’autres produits sans rapport avec votre demande}
 #'   \item{q26_2}{Non, car vous n’avez pas pu exprimer clairement votre souhait d’investir sur des produits durables}
@@ -120,26 +116,19 @@
 #'   \item{q26_4}{Vous ne savez pas. Car son discours n’était pas clair}
 #'   \item{q26_5}{Oui, et vous ressortez pleinement satisfait de votre rendez-vous}
 #'   \item{q26_6}{Oui, mais finalement ces produits présentés comme durables ne vous ont pas convaincu}
-#'   \item{q26_7}{Dans ce cas précisez pourquoi :}
-#'   \item{q27}{Note : Demandez à chaque rendez-vous à repartir avec une documentation, un lien ou un mail qui pourrait attester du produit que l’on vous propose.}
 #'   \item{q28}{Si le conseiller financier vous a proposé un produit responsable, de quelle manière avez-vous perçu sa façon d’aborder votre demande ?}
 #'   \item{q29}{Lorsque vous lui avez demandé si ces placements étaient risqués, quelle a été sa réponse ?}
 #'   \item{q30}{Les produits proposés correspondent-t-ils à votre profil de risque (risquophile, risquophobe, équilibré)?}
 #'   \item{q31}{Les produits proposés correspondent-t-ils à votre volonté d'investir vert?}
-#'   \item{q32}{Pouvez-vous développer votre réponse en quelques mots ?}
 #'   \item{q33}{Quelle que soit votre réponse à la question 36, pouvez-vous nous dire si le conseiller a cherché à vous influencer pour que vous vous dirigiez vers d’autres produits qu’il propose et qui ne sont pas responsables ?}
-#'   \item{q34}{Si oui pouvez-vous développer votre réponse en quelques mots ?}
 #'   \item{q35}{Vous avez demandé à votre conseiller quels sont les moyens qui vous permettent de vous assurer que votre argent est bien investi selon vos désirs responsables. Quels sont les arguments qu'il vous a avancé ?}
 #'   \item{q35_1}{Il y a un contrôle indépendant à ce sujet}
 #'   \item{q35_2}{L'Etat effectue un contrôle sur le produit}
 #'   \item{q35_3}{Le produit bénéficie d'un écolabel}
 #'   \item{q35_4}{Des rapports sont publiés régulièrement}
 #'   \item{q35_5}{Le conseiller ne sait pas répondre à votre question}
-#'   \item{q35_6}{Autre (veuillez préciser) :}
 #'   \item{q36}{Si ces moyens de contrôle existent, précisez lesquels : }
 #'   \item{q36_1}{Les résultats sont disponibles sur internet}
-#'   \item{q36_2}{Autre (veuillez préciser) :}
-#'   \item{q37}{Y'a-t-il des informations supplémentaires que vous souhaiteriez nous communiquer à propos de la prise en compte des préférences exprimées?}
 #'   \item{q38}{Au cours de votre entretien, le conseiller a-t-il prononcé spontanément le mot impact ?}
 #'   \item{q39_1}{Pour les profils cherchant à investir dans des produits verts :Vous avez prononcé plusieurs fois le mot impact auprès du conseiller et exprimé clairement que vous recherchiez un produit avec de « l’impact dans la vie/l’économie réelle ». Quelle a été la réaction du conseiller ?}
 #'   \item{q39_2}{Il en a été enthousiaste et vous a proposé des produits en conséquence}
@@ -156,15 +145,9 @@
 #'   \item{q40_4}{Le fonds est un fonds de confiance avec un gérant qualifié et expérimenté}
 #'   \item{q40_5}{Le fonds dispose d’un label (Greenfin, ISR,...)}
 #'   \item{q40_6}{Le conseiller n'a pas su vous répondre}
-#'   \item{q40_7}{Autre (veuillez préciser). Vous pouvez également préciser ici le label proposé.}
-#'   \item{q41}{Vous avez demandé plus d'explications car vous n'êtes pas convaincu par les arguments qu'il vous a avancés. Que vous a-t-il dit de plus ?}
-#'   \item{q42}{Quels ont été les arguments avancés par le conseiller pour prouver l’impact du fonds qu’il vous proposait ?}
-#'   \item{q44}{Quels ont étés les avantages et les inconvénients que votre conseiller a utilisés quand il vous a présenté des produits avec impact ?}
 #'   \item{q45}{Le conseiller n'avait à priori aucun produit vert dont il pouvait vous confirmer à 100% l'impact. Au terme de votre entretien il a du constater l'absence de produit adapté à votre recherche. Quelle a été son action ?}
 #'   \item{q46}{Au terme de votre rendez-vous, vous avez demandé à avoir un résumé de cet entretien. Vous a-t-il été transmis ? Si, oui merci de nous faire suivre ce document/mail.}
 #'   \item{q47}{A la fin du rendez-vous, le conseiller vous a-t-il remis un rapport récapitulant l'ensemble des conseils donnés sur les différents produits?}
-#'   \item{q48}{Indiquez ici toute remarque supplémentaire sur votre rendez-vous. }
 #'   \item{q49}{Quel est le titre de la personne qui vous a reçu?}
-
 #' }
 "Mystery_france_2021"
