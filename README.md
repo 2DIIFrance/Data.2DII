@@ -32,7 +32,7 @@ Survey_sustainability_2023 | The survey assets to understand the retail investor
 Mystery_france_2023 | The focus of the this mystery shopping campaign was to assess the compliance with the new MiFID II regulation and broader sustainability motivations in France. (Results in French) | 64 | France | 2023 | 
 Survey_sustainability_france_2024 | The survey assets to understand the retail investors demand for sustainable finance products. It has 5 parts : A. Interest, B. Sustainable investing – General, C. Sustainability goals, D. Sustainability Preferences, E: Sociodemographic profile | 1000 | France | 2024 |
 
-** Open questions on Mystery shopping campaigns were deleted. They will be upon request on: comms@2degrees-investing.org
+** Open questions on Mystery shopping campaigns were deleted. They will be available upon request on: comms@2degrees-investing.org
 
 ## Documentation
 
