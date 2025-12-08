@@ -3,7 +3,7 @@
 \docType{data}
 \name{Mystery_France_2024}
 \alias{Mystery_France_2024}
-\title{Mystery Shopping campaing France 2024}
+\title{Mystery Shopping campaign France 2024}
 \format{
 A tibble with 304 rows and 164 variables:
 \describe{
@@ -174,7 +174,7 @@ A tibble with 304 rows and 164 variables:
 }
 }
 \source{
-\url{https://www.pnas.org/content/114/7/1512/tab-figures-data}
+\url{SFO}
 }
 \usage{
 Mystery_France_2024

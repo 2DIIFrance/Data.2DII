@@ -1,0 +1,169 @@
+#' Mystery Shopping campaign EUKI 2025
+#'
+#'Campaign done by the University of Kassel and SFO, aim to understand if investment advisors are responsive to private investors’ preferences in Bulgaria, Estonia and Romania.
+#'
+#' @format A tibble with 114 rows and 162 variables:
+#' \describe{
+#'   \item{q1}{Please indicate the name of the bank you are assessing:}
+#'   \item{q2}{Please indicate the date on which you had the appointment with the advisor (format: dd.mm.yyyy.).}
+#'   \item{q3}{How many appointments did you have before recommending the product?}
+#'   \item{q4}{Please indicate the time of the first appointment (e.g. 13:45).}
+#'   \item{q5}{Please indicate the time of the second appointment if there was one (e.g. 13:45).}
+#'   \item{q6}{Please indicate your gender}
+#'   \item{q7}{Please indicate your age in whole years. I am ______}
+#'   \item{q8}{How would you describe your ethnic origin?}
+#'   \item{q8_other}{How would you describe your ethnic origin?_other}
+#'   \item{q9}{How would you describe the ethnic origin of the advisor who met you?}
+#'   \item{q9_other}{How would you describe the ethnic origin of the advisor who met you?_other}
+#'   \item{q10_1}{Have you received the following documents from your financial adviser? (tick all that apply)_Suitability questionnaire}
+#'   \item{q10_2}{Have you received the following documents from your financial adviser? (tick all that apply)_Key Information Documents for recommended products (KIDs)}
+#'   \item{q10_3}{Have you received the following documents from your financial adviser? (tick all that apply)_Advisor's handwritten notes}
+#'   \item{q10_4}{Have you received the following documents from your financial adviser? (tick all that apply)_Fund prospectuses}
+#'   \item{q10_5}{Have you received the following documents from your financial adviser? (tick all that apply)_Marketing documents}
+#'   \item{q10_6}{Have you received the following documents from your financial adviser? (tick all that apply)_I have not received any documents from the advisor, even though I requested them (single answer, do not tick any other boxes)}
+#'   \item{q10_7}{Have you received the following documents from your financial adviser? (tick all that apply)_Other (please specify)}
+#'   \item{q11}{What type of assistance did the advisor use during the interview?}
+#'   \item{q11_other}{What type of assistance did the advisor use during the interview?_other}
+#'   \item{q12_1}{Please tick all that apply (multiple answers)_The advisor did not ask any questions on his own initiative about my preferences in terms of sustainable development.}
+#'   \item{q12_2}{Please tick all that apply (multiple answers)_I had to intervene in the conversation and actively persuade the advisor to talk to me about sustainable investment.}
+#'   \item{q12_3}{Please tick all that apply (multiple answers)_The advisor misunderstood my preference for sustainable development in the advice system.}
+#'   \item{q12_4}{Please tick all that apply (multiple answers)_The advisor misjudged my preference for sustainable development.}
+#'   \item{q12_5}{Please tick all that apply (multiple answers)_I did not receive a product recommendation from the advisor, although I actively requested one.}
+#'   \item{q12_6}{Please tick all that apply (multiple answers)_The advisor offered me a discount on sustainable financial products (e.g. a reduction in fees).}
+#'   \item{q12_7}{Please tick all that apply (multiple answers)_The advisor offered me a discount on conventional financial products (e.g. a reduction in fees).}
+#'   \item{q12_8}{Please tick all that apply (multiple answers)_The advisor didn't want to advise me on sustainable financial products}
+#'   \item{q12_9}{Please tick all that apply (multiple answers)_I have not received a declaration of suitability, although I asked the advisor for one.}
+#'   \item{q13}{What risk preference did you express during the consultation?}
+#'   \item{q14}{What is the amount of the investment you expressed during the consultation?}
+#'   \item{q15}{What level of financial knowledge and experience did you express during the consultation?}
+#'   \item{q16}{The advisor has carried out a suitability assessment during the consultation (for example, by asking you questions about your risk preferences, the amount of your investment, your financial knowledge and experience).}
+#'   \item{q17}{I had to intervene to express my financial objectives (risk preferences, amount of my investment, knowledge and experience) because the adviser didn't ask me any questions on the subject, even though he had started recommending products to me.}
+#'   \item{q18}{What sustainable development preference did you express in the consultation you are evaluating?}
+#'   \item{q19}{Length of first appointment consultation (in minutes)}
+#'   \item{q20}{Length of consultation for the second appointment, if there was one (in minutes)}
+#'   \item{q21}{Please indicate the location of the bank branch you visited:}
+#'   \item{q22}{How did the first council meeting go?}
+#'   \item{q23}{How did the second council meeting go, if there was one?}
+#'   \item{q24}{How many bank advisers took part in the meeting?}
+#'   \item{q25}{Please indicate the name of the first financial advisor :}
+#'   \item{q26}{Please indicate the name of the second financial adviser, if any:}
+#'   \item{q27}{Please indicate the gender of advisor #1}
+#'   \item{q28}{Please indicate the gender of advisor #2 if applicable}
+#'   \item{q29}{Please indicate how long the original adviser has been providing investment advice (in years).}
+#'   \item{q30}{Please indicate how long the second adviser has been providing investment advice (in years).}
+#'   \item{q31_1}{Please indicate the aspects of the consultation on which you had to intervene because the consultant did not ask you questions or hand over the document on his own initiative (please tick all that apply!)._Declaration of suitability}
+#'   \item{q31_2}{Please indicate the aspects of the consultation on which you had to intervene because the consultant did not ask you questions or hand over the document on his own initiative (please tick all that apply!)._Key information documents for recommended products (KIDs)}
+#'   \item{q31_3}{Please indicate the aspects of the consultation on which you had to intervene because the consultant did not ask you questions or hand over the document on his own initiative (please tick all that apply!)._Your risk preferences}
+#'   \item{q31_4}{Please indicate the aspects of the consultation on which you had to intervene because the consultant did not ask you questions or hand over the document on his own initiative (please tick all that apply!)._The amount of your investment}
+#'   \item{q31_5}{Please indicate the aspects of the consultation on which you had to intervene because the consultant did not ask you questions or hand over the document on his own initiative (please tick all that apply!)._Your sustainability preferences}
+#'   \item{q31_6}{Please indicate the aspects of the consultation on which you had to intervene because the consultant did not ask you questions or hand over the document on his own initiative (please tick all that apply!)._Your financial experience and knowledge}
+#'   \item{q31_7}{Please indicate the aspects of the consultation on which you had to intervene because the consultant did not ask you questions or hand over the document on his own initiative (please tick all that apply!)._I did not intervene during the appointment (single answer, do not tick other boxes)}
+#'   \item{q31_8}{Please indicate the aspects of the consultation on which you had to intervene because the consultant did not ask you questions or hand over the document on his own initiative (please tick all that apply!)._Other (please specify)}
+#'   \item{q32_1}{Please indicate your level of agreement_Did you feel that the advisor took you seriously during the consultation?}
+#'   \item{q32_2}{Please indicate your level of agreement_The advisor didn't know what my needs were.}
+#'   \item{q32_3}{Please indicate your level of agreement_I have the impression that the advisor didn't act in my best interests.}
+#'   \item{q32_4}{Please indicate your level of agreement_The advisor chose words that were clear and understandable to me.}
+#'   \item{q33_1}{Please indicate your level of agreement_I trust the advisor.}
+#'   \item{q33_2}{Please indicate your level of agreement_I feel secure in my dealings with the advisor.}
+#'   \item{q33_3}{Please indicate your level of agreement_The advisor was polite.}
+#'   \item{q34_1}{Please indicate your level of agreement_If the advisor promises to do something by a certain date, he has done it.}
+#'   \item{q34_2}{Please indicate your level of agreement_The advisor is reliable.}
+#'   \item{q34_3}{Please indicate your level of agreement_The advisor provides advice on the date initially agreed.}
+#'   \item{q34_4}{Please indicate your level of agreement_I have the impression that the advisor followed the consultation procedure correctly.}
+#'   \item{q34_5}{Please indicate your level of agreement_The advisor conducted the consultation in a courteous manner.}
+#'   \item{q35_1}{Please indicate your level of agreement_The advisor kept me waiting}
+#'   \item{q35_2}{Please indicate your level of agreement_The advisor was unable to help me with my application.}
+#'   \item{q35_3}{Please indicate your level of agreement_The board meeting did not take long enough (perceived time)}
+#'   \item{q36_1}{Please indicate your level of agreement_The advisor has modern equipment.}
+#'   \item{q36_2}{Please indicate your level of agreement_The advisor is well dressed and gives a good impression.}
+#'   \item{q36_3}{Please indicate your level of agreement_The appearance of the branch's facilities is appropriate for a bank.}
+#'   \item{q36_4}{Please indicate your level of agreement_The interview room is pleasant and clean.}
+#'   \item{q37_1}{Please indicate your level of agreement_The advisor made a positive impression on me when he advised me on sustainable investments.}
+#'   \item{q37_2}{Please indicate your level of agreement_The advisor made a positive impression on me when he gave me general advice (i.e. unrelated to sustainable development).}
+#'   \item{q37_3}{Please indicate your level of agreement_The advisor maintained eye contact with me during the interview.}
+#'   \item{q37_4}{Please indicate your level of agreement_The advisor was friendly.}
+#'   \item{q37_5}{Please indicate your level of agreement_The councillor got involved during the council meeting}
+#'   \item{q37_6}{Please indicate your level of agreement_The advisor encouraged me to make an investment decision.}
+#'   \item{q37_7}{Please indicate your level of agreement_The advisor pressured me to make an investment decision.}
+#'   \item{q37_8}{Please indicate your level of agreement_The advisor presented the recommended products well.}
+#'   \item{q37_9}{Please indicate your level of agreement_The advisor made a professional impression on me.}
+#'   \item{q37}{Please rate the quality of the advisor's advice on sustainable development.}
+#'   \item{q38_1}{Please rate the following statements._Preparation / Training of advisers in the field of sustainable investment.}
+#'   \item{q38_2}{Please rate the following statements._Knowledge of information documents on sustainable development.}
+#'   \item{q38_3}{Please rate the following statements._The advisor's knowledge of the bank's services and products.}
+#'   \item{q38_4}{Please rate the following statements._The advisor's willingness to provide you with the information you have requested.}
+#'   \item{q38_5}{Please rate the following statements._The advisor's knowledge of sustainable investments only.}
+#'   \item{q38_6}{Please rate the following statements._How the advisor answered your questions about the products.}
+#'   \item{q38_7}{Please rate the following statements._Your overall impression of the advisor's knowledge (i.e. not exclusively related to sustainable development).}
+#'   \item{q39_1}{Please rate the following statements._The advisor's knowledge of the recommended sustainable product(s).}
+#'   \item{q39_2}{Please rate the following statements._Quality of the advisor's advisory services in the field of sustainable development only.}
+#'   \item{q39_3}{Please rate the following statements._Quality of the advisor's advisory services, with the exception of sustainable development.}
+#'   \item{q39_4}{Please rate the following statements._Overall quality of the advisor's advice.}
+#'   \item{q40_1}{Please rate the following statements._Inclusion of information relating to the investor in the questions you are asked (investment objective, attitude to risk, investment horizon, income and asset situation).}
+#'   \item{q40_2}{Please rate the following statements._Explanations or comments by the advisor concerning the product's key information sheet.}
+#'   \item{q40_3}{Please rate the following statements._Explanations or comments by the advisor concerning the declaration of suitability.}
+#'   \item{q41}{For each statement, please indicate the extent to which you agree._The advisor informed me about the different types of accounts and investments.}
+#'   \item{q42_1}{For each statement, please indicate the extent to which you agree._I got the impression that the advisor wanted to encourage me to make sustainable investments.}
+#'   \item{q42_2}{For each statement, please indicate the extent to which you agree._The investment advisor seemed motivated when he started talking about sustainable investments.}
+#'   \item{q43_1}{For each statement, please indicate the extent to which you agree._The bank visited advertises sustainable development very prominently on its corporate website.}
+#'   \item{q43_2}{For each statement, please indicate the extent to which you agree._The theme of sustainable development is prominently advertised in the bank branch visited (e.g. leaflets, displays, etc.).}
+#'   \item{q43_3}{For each statement, please indicate the extent to which you agree._Even before I visited the bank, I had already seen advertising about the bank's sustainable investments (television, posters, radio, podcast adverts).}
+#'   \item{q44_1}{Please rate the following statements._To what extent can the investment adviser explain the differences between the three sustainability standards (EU Taxonomy, SFDR and PAI)?}
+#'   \item{q44_2}{Please rate the following statements._Please evaluate the way in which they asked you about your sustainability preferences during your interview.}
+#'   \item{q45_1}{For each statement, please indicate the extent to which you agree._The investment advisor was able to allay my fears about greenwashing.}
+#'   \item{q45_2}{For each statement, please indicate the extent to which you agree._The advisor was able to dispel my hypothesis that sustainable investments are associated with higher costs than conventional investments.}
+#'   \item{q45_3}{For each statement, please indicate the extent to which you agree._The advisor was able to refute my hypothesis that sustainable investments generate lower returns than conventional investments.}
+#'   \item{q45_4}{For each statement, please indicate the extent to which you agree._The advisor was able to refute my hypothesis that sustainable investments are riskier than conventional investments.}
+#'   \item{q45_5}{For each statement, please indicate the extent to which you agree._The advisor seemed to be familiar with the information documents relating to products in the field of sustainable development.}
+#'   \item{q45_6}{For each statement, please indicate the extent to which you agree._The advisor explained the content of the sustainable product(s) on offer to me in an understandable way.}
+#'   \item{q45_7}{For each statement, please indicate the extent to which you agree._The investment adviser was able to explain the impact generated by the recommended product.}
+#'   \item{q45_8}{For each statement, please indicate the extent to which you agree._The advisor tried to influence me.}
+#'   \item{q46_1}{For each statement, please indicate the extent to which you agree with it._The enquiry into my preference for sustainability was understandable to me.}
+#'   \item{q46_2}{For each statement, please indicate the extent to which you agree with it._The way I was questioned about my preference for sustainable development left me with a complex impression.}
+#'   \item{q46_3}{For each statement, please indicate the extent to which you agree with it._I couldn't follow the adviser when he asked me about my sustainability preference and I was confused.}
+#'   \item{q46_4}{For each statement, please indicate the extent to which you agree with it._I got the impression that the advisor was trying to influence me when he asked me about my preferences in terms of sustainable development.}
+#'   \item{q46_5}{For each statement, please indicate the extent to which you agree with it._The advisor pushed me towards the 'environmentally sustainable investment' category (EU taxonomy) when he asked me about my sustainability preferences.}
+#'   \item{q46_6}{For each statement, please indicate the extent to which you agree with it._The advisor pushed me into the "Sustainable Investment" (SFDR) category when he asked me what my preference was in terms of sustainability.}
+#'   \item{q46_7}{For each statement, please indicate the extent to which you agree with it._The advisor put me in the "Main negative impact" (PAI) category when he asked me what my preference was in terms of sustainability.}
+#'   \item{q46_8}{For each statement, please indicate the extent to which you agree with it._The advisor pushed me to indicate "no preference" when he asked me my preference in terms of sustainability.}
+#'   \item{q47_1}{For each statement, please indicate the extent to which you agree._The explanatory documents that the advisor provided on sustainable investment were very useful.}
+#'   \item{q47_2}{For each statement, please indicate the extent to which you agree._The advisor explained the concept of sustainable investment in a way that was easy to understand.}
+#'   \item{q47_3}{For each statement, please indicate the extent to which you agree._The advisor explained the concept of ecologically sustainable investment (EU taxonomy) to me in an understandable way.}
+#'   \item{q47_4}{For each statement, please indicate the extent to which you agree._The advisor explained the sustainable investment concept (SFDR) to me in an understandable way.}
+#'   \item{q47_5}{For each statement, please indicate the extent to which you agree._The advisor explained the concept of "Principle Adverse Impacts" (PAI) in an understandable way.}
+#'   \item{q47_6}{For each statement, please indicate the extent to which you agree._The investment advisor was able to explain to me the impact of sustainable investments}
+#'   \item{q47_7}{For each statement, please indicate the extent to which you agree._I felt well advised in the area of "environmentally sustainable investments" (EU taxonomy).}
+#'   \item{q47_8}{For each statement, please indicate the extent to which you agree._I felt well advised in the area of "sustainable investment" (SFDR).}
+#'   \item{q47_9}{For each statement, please indicate the extent to which you agree._I felt well advised in the area of "Main negative impacts" (PAI).}
+#'   \item{q47_10}{For each statement, please indicate the extent to which you agree._The investment advisor encouraged me to invest sustainably and gave me the feeling that I was doing something right.}
+#'   \item{q48}{For each statement, please indicate the extent to which you agree._Please indicate your level of satisfaction with the advisor's advice.}
+#'   \item{q49_1}{For each statement, please indicate the extent to which you agree._The advisor has a high level of knowledge.}
+#'   \item{q49_2}{For each statement, please indicate the extent to which you agree._The advisor provided me with comprehensive information.}
+#'   \item{q49_3}{For each statement, please indicate the extent to which you agree._The advisor gave me a lot of information.}
+#'   \item{q49_4}{For each statement, please indicate the extent to which you agree._The advisor's explanations were structured.}
+#'   \item{q49_5}{For each statement, please indicate the extent to which you agree._The advisor responded to individual needs.}
+#'   \item{q49_6}{For each statement, please indicate the extent to which you agree._The advisor was well informed.}
+#'   \item{q50_1}{For each statement, please indicate the extent to which you agree._How satisfied are you overall with the advisor's advice?}
+#'   \item{q50_2}{For each statement, please indicate the extent to which you agree._How satisfied are you with your advisor's advice on sustainable investment?}
+#'   \item{q51_1}{For each statement, please indicate the extent to which you agree._I would recommend an advisor from the bank I evaluated.}
+#'   \item{q51_2}{For each statement, please indicate the extent to which you agree._I could call on an adviser from this bank again if I had the chance.}
+#'   \item{q51_3}{For each statement, please indicate the extent to which you agree._If the bank is not available in the area I am visiting (for example, no appointments available, not yet open), I would be prepared to accept an appointment at another branch of the same bank in the vicinity, within a radius of 20 kilometres.}
+#'   \item{q51_4}{For each statement, please indicate the extent to which you agree._After receiving advice, I will indeed invest in one or more of the recommended sustainable products}
+#'   \item{q51_5}{For each statement, please indicate the extent to which you agree._I intend to invest sustainably following the advice given by the advisor, but not in one of the recommended sustainable products.}
+#'   \item{q52_1}{For each statement, please indicate the extent to which you agree._I am satisfied with my decision to go to this bank.}
+#'   \item{q52_2}{For each statement, please indicate the extent to which you agree._My decision to seek advice from this bank was a wise one.}
+#'   \item{q52_3}{For each statement, please indicate the extent to which you agree._I think I was right to ask this bank for advice.}
+#'   \item{q52_4}{For each statement, please indicate the extent to which you agree._I think my experience with this bank has been a pleasant one.}
+#'   \item{q53_1}{Please assess the following aspects_The advisor showed me why the recommended sustainable product(s) were right for me.}
+#'   \item{q53_2}{Please assess the following aspects_The various product recommendations made by the advisor seemed appropriate to me.}
+#'   \item{q53_3}{Please assess the following aspects_The advisor explained the advantages and disadvantages of the recommended products in an understandable way.}
+#'   \item{q53_4}{Please assess the following aspects_The investment advisor was unable to recommend a product based on my preference for sustainable development.}
+#'   \item{q53_5}{Please assess the following aspects_My preference for sustainable development was taken into account in the product recommendation.}
+#'   \item{q53_6}{Please assess the following aspects_The advisor's knowledge of the different products gives me a good feeling.}
+#'   \item{q53_7}{Please assess the following aspects_The advisor provided me with adequate information about the products.}
+#'   \item{q53_8}{Please assess the following aspects_The advisor is familiar with the bank's equipment (e.g. IT system).}
+#'   \item{q54}{During the consultation, the advisor assured me that the products he recommended have an impact in the real world.}
+#'   \item{q55}{Would you be prepared to follow the advice and invest in the recommended products?}
+#' }
+#' @source \url{SFO}
+"Mystery_EUKI_2025"

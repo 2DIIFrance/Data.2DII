@@ -1,4 +1,4 @@
-#' Mystery Shopping campaing France 2024
+#' Mystery Shopping campaign France 2024
 #'
 #' Campaign done by the University of Kassel and SFO, aim to understand if investment advisors are responsive to private investors’ preferences.
 #'
@@ -169,5 +169,5 @@
 #'   \item{q134}{Lors de la consultation, le conseiller m'a assuré que les produits qu'il recommandait ont un impact dans le monde réel.}
 #'   \item{q135}{Seriez-vous prêt à suivre le conseil et à investir dans les produits recommandés ?}
 #' }
-#' @source \url{https://www.pnas.org/content/114/7/1512/tab-figures-data}
+#' @source \url{SFO}
 "Mystery_France_2024"
